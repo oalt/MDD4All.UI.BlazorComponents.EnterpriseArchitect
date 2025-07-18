@@ -1,0 +1,9 @@
+﻿@using MDD4All.UI.BlazorComponents.Tree
+@using MDD4All.EAFacade.ModelTree.ViewModels
+<MvvmTree TNode="ModelNodeViewModel"
+          DataContext="@DataContext"
+          SelectedNodeChanged="OnSelectionChanged">
+
+    <TitleTemplate><ModelTreeIcon Icon="@context.Icon" /> @context.Title</TitleTemplate>
+    <LoadingTemplate><span class="placeholder-glow"></span></LoadingTemplate>
+</MvvmTree>

@@ -6,6 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
     <RootNamespace>$(MSBuildProjectName.Replace("-dev", ""))</RootNamespace>
+    <AssemblyName>$(MSBuildProjectName.Replace("-dev", ""))</AssemblyName>
   </PropertyGroup>
 
     <ItemGroup>
@@ -16,11 +17,5 @@
     <ProjectReference Include="..\..\..\MDD4All.EnterpriseArchitect.ModelTree\src\MDD4All.EnterpriseArchitect.ModelTree\MDD4All.EAFacade.ModelTree-dev.csproj" />
     <ProjectReference Include="..\..\..\MDD4All.UI.BlazorComponents\src\MDD4All.UI.BlazorComponents\MDD4All.UI.BlazorComponents-dev.csproj" />
   </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="wwwroot\" />
-  </ItemGroup>
-
-
 
 </Project>
